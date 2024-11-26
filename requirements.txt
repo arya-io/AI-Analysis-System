@@ -1,5 +1,4 @@
 websockets
 asyncio
 langchain-groq
-difflib
 unittest
