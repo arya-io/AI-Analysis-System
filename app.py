@@ -15,7 +15,7 @@ st.set_page_config(
     page_title = 'AI Analysis System',
 )
 
-st.title("AI Feedback System")
+st.title("AI Analysis System")
 st.write("Ask an AI-related question and provide your answer below:")
 
 question = st.text_input("Enter AI-related question:")
@@ -26,6 +26,6 @@ if st.button("Submit"):
         feedback = asyncio.run(send_message(question, response))
         
         st.write("Feedback from the server:")
-        st.write(feedback)
+        st.success(feedback)
     else:
         st.warning("Please provide both a question and a response.")
