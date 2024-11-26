@@ -114,6 +114,9 @@ python -m unittest test_analysis_logic.py
 ```
 This will run all the test cases and show the results in the terminal.
 
+## Result:
+![Screenshot of the application](screenshot.png)
+
 ## Conclusion:
 This project provides a real-time interactive system for generating feedback on AI-related questions. By integrating GroqLLM, we were able to enhance the feedback generation process, making it more dynamic and intelligent. The use of WebSockets ensures that communication is fast and efficient, and the caching mechanism further optimizes the system’s performance.
 
