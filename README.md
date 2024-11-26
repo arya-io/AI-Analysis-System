@@ -38,6 +38,7 @@ Step-by-step guide to set up the project locally.
     ├── websocket_client.py
     ├── websocket_server.py
     ├── test_analysis_logic.py
+    ├── app.py
     ├── requirements.txt
     └── README.md
 ```
@@ -67,6 +68,12 @@ On a separate terminal, run the client to interact with the server:
 
 ```bash
 python websocket_client.py
+```
+
+If you are running through Streamlit, run
+
+```bash
+streamlit run app.py
 ```
 
 ## Architecture and Design
@@ -115,7 +122,10 @@ python -m unittest test_analysis_logic.py
 This will run all the test cases and show the results in the terminal.
 
 ## Result:
+### When run in terminal:
 ![Screenshot of the application](screenshot.png)
+### When run in Streamlit
+![Screenshot of the application](screenshot2.png)
 
 ## Conclusion:
 This project provides a real-time interactive system for generating feedback on AI-related questions. By integrating GroqLLM, we were able to enhance the feedback generation process, making it more dynamic and intelligent. The use of WebSockets ensures that communication is fast and efficient, and the caching mechanism further optimizes the system’s performance.
