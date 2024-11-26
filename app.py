@@ -12,6 +12,9 @@ async def send_message(question, response):
         feedback = await websocket.recv()
         return feedback
 
+st.set_page_config(
+    page_title = 'AI Analysis System',
+)
 st.title("AI Analysis System")
 st.write("Ask an AI-related question and provide your answer below:")
 
